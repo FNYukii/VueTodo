@@ -9,8 +9,8 @@ const content = ref('')
 
 <template>
   <main>
-    <div className="mt-8">
-      <h1 className="text-2xl font-bold">Todoの作成</h1>
+    <div class="mt-8">
+      <h1 class="text-2xl font-bold">Todoの作成</h1>
     </div>
 
     <textarea
@@ -19,10 +19,10 @@ const content = ref('')
       class="mt-8 outlined-textarea"
     />
 
-    <div className="mt-8   flex justify-between">
-      <RouterLink to="/" className="outlined-button"> 戻る </RouterLink>
+    <div class="mt-8 flex justify-between">
+      <RouterLink to="/" class="outlined-button"> 戻る </RouterLink>
 
-      <button v-bind:disabled="content.length === 0" className="filled-button">
+      <button v-bind:disabled="content.length === 0" class="filled-button">
         作成
       </button>
     </div>
