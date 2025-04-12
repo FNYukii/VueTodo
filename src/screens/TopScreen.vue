@@ -16,7 +16,7 @@ const SAMPLE_TODOS = [
     <div class="mt-8 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Todos</h1>
 
-      <a href="/new" class="outlined-button -my-2">新規Todo</a>
+      <RouterLink to="/new" class="outlined-button -my-2">新規Todo</RouterLink>
     </div>
 
     <div class="mt-8">
@@ -28,13 +28,13 @@ const SAMPLE_TODOS = [
         v-if="SAMPLE_TODOS.length !== 0"
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
       >
-        <a
+        <RouterLink
           v-for="todo in SAMPLE_TODOS"
-          v-bind:href="'/todos/' + todo.id"
+          v-bind:to="'/todos/' + todo.id"
           class="p-4 border border-iron transition outline-none hover:bg-iron-pale focus:bg-iron-pale active:bg-iron-pale"
         >
           <p class="whitespace-pre">{{ todo.content }}</p>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </main>
