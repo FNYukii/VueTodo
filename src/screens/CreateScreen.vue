@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { generateSampleTodoContent } from '../utils/form'
 
 const content = ref('')
 </script>
@@ -12,7 +13,7 @@ const content = ref('')
 
     <textarea
       v-model="content"
-      placeholder="新しいTodo"
+      v-bind:placeholder="generateSampleTodoContent()"
       class="mt-8 outlined-textarea"
     />
 
