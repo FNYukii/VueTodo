@@ -14,3 +14,7 @@
   --color-iron: var(--color-gray-700);
   --color-iron-pale: var(--color-gray-900);
 }
+
+.outlined-button {
+  @apply min-w-36 px-8 py-2 text-center   text-accent border border-accent   transition cursor-pointer outline-none   hover:bg-accent-pale focus:bg-accent-pale active:bg-accent-pale;
+}
