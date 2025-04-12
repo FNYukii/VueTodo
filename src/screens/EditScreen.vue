@@ -10,7 +10,7 @@ const content = ref('')
 <template>
   <main>
     <div class="mt-8">
-      <h1 class="text-2xl font-bold">Todoの作成</h1>
+      <h1 class="text-2xl font-bold">Todoの編集</h1>
     </div>
 
     <textarea
