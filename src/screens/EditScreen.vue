@@ -1,10 +1,17 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import { generateSampleTodoContent } from '../utils/form'
+import { useRoute } from 'vue-router'
+import { readTodo } from '../utils/storage'
 
 document.title = 'Todoの編集 - Vue Todo'
 
 const content = ref('')
+
+const route = useRoute()
+const id = route.params.id as string
+const todo = readTodo(id)
+content.value = todo?.content ?? ''
 </script>
 
 <template>
@@ -23,7 +30,7 @@ const content = ref('')
       <RouterLink to="/" class="outlined-button"> 戻る </RouterLink>
 
       <div class="flex gap-8 flex-wrap justify-end">
-        <button onClick="{handleDelete}" class="outlined-button">削除</button>
+        <button class="outlined-button">削除</button>
 
         <button v-bind:disabled="content.length === 0" class="filled-button">
           保存
