@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { generateSampleTodoContent } from '../utils/form'
 import { useRoute, useRouter } from 'vue-router'
-import { deleteTodo, readTodo } from '../utils/storage'
+import { deleteTodo, readTodo, updateTodo } from '../utils/storage'
 
 document.title = 'Todoの編集 - Vue Todo'
 
@@ -18,6 +18,11 @@ content.value = todo?.content ?? ''
 const handleDelete = () => {
   if (!window.confirm('Todoを削除してもよろしいですか？')) return
   deleteTodo(id)
+  router.push('/')
+}
+
+const handleSave = () => {
+  updateTodo(id, content.value)
   router.push('/')
 }
 </script>
@@ -40,7 +45,11 @@ const handleDelete = () => {
       <div class="flex gap-8 flex-wrap justify-end">
         <button @click="handleDelete" class="outlined-button">削除</button>
 
-        <button v-bind:disabled="content.length === 0" class="filled-button">
+        <button
+          @click="handleSave"
+          v-bind:disabled="content.length === 0"
+          class="filled-button"
+        >
           保存
         </button>
       </div>
