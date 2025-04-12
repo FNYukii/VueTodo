@@ -1,3 +1,7 @@
+<script setup>
+import Header from './parts/Header.vue'
+</script>
+
 <template>
-  <h1>Vue Todo</h1>
+  <Header />
 </template>
