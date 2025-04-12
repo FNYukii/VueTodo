@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import TopScreen from './screens/TopScreen.vue'
 import CreateScreen from './screens/CreateScreen.vue'
 import EditScreen from './screens/EditScreen.vue'
@@ -10,7 +10,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
