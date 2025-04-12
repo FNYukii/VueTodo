@@ -17,6 +17,7 @@ const content = ref('')
       v-model="content"
       v-bind:placeholder="generateSampleTodoContent()"
       class="mt-8 outlined-textarea"
+      autofocus
     />
 
     <div class="mt-8 flex justify-between">
