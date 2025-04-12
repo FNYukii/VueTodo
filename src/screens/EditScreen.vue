@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import { generateSampleTodoContent } from '../utils/form'
 
+document.title = 'Todoの編集 - Vue Todo'
+
 const content = ref('')
 </script>
 

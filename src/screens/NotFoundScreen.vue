@@ -1,3 +1,7 @@
+<script setup>
+document.title = 'Not Found - Vue Todo'
+</script>
+
 <template>
   <main>
     <div class="mt-8">

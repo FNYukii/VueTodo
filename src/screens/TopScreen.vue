@@ -1,4 +1,6 @@
 <script setup>
+document.title = 'Vue Todo'
+
 const SAMPLE_TODOS = [
   {
     id: 'aaa',
