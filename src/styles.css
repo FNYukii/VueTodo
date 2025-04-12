@@ -1,1 +1,16 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-wall: var(--color-gray-950);
+
+  --color-primary: var(--color-white);
+  --color-secondary: var(--color-gray-500);
+  --color-accent: var(--color-sky-500);
+
+  --color-accent-weak: var(--color-sky-600);
+  --color-accent-light: var(--color-sky-800);
+  --color-accent-pale: var(--color-sky-950);
+
+  --color-iron: var(--color-gray-700);
+  --color-iron-pale: var(--color-gray-900);
+}
