@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import { generateSampleTodoContent } from '../utils/form'
 import { useRouter } from 'vue-router'

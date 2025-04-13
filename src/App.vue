@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Header from './parts/Header.vue'
 import TopScreen from './screens/TopScreen.vue'
 </script>

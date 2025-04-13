@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { readTodos } from '../utils/storage'
 
 document.title = 'Vue Todo'
