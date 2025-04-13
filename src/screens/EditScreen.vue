@@ -39,7 +39,7 @@ const handleSave = () => {
       class="mt-8 outlined-textarea"
     />
 
-    <div class="mt-8 flex justify-between items-start">
+    <div class="mt-8 flex justify-between gap-8 items-start">
       <RouterLink to="/" class="outlined-button"> 戻る </RouterLink>
 
       <div class="flex gap-8 flex-wrap justify-end">
