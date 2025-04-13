@@ -32,7 +32,7 @@ const handleCreate = () => {
       <RouterLink to="/" class="outlined-button">戻る</RouterLink>
 
       <button
-        :disabled="content.length === 0"
+        :disabled="content.length === 0 || content.trim() === ''"
         @click="handleCreate"
         class="filled-button"
       >

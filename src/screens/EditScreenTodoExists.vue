@@ -44,7 +44,7 @@ const handleSave = () => {
         <button @click="handleDelete" class="outlined-button">削除</button>
 
         <button
-          :disabled="content.length === 0"
+          :disabled="content.length === 0 || content.trim() === ''"
           @click="handleSave"
           class="filled-button"
         >
