@@ -45,13 +45,13 @@ const handleSave = () => {
       <Link to="/" title="戻る" />
 
       <div class="flex gap-8 flex-wrap justify-end">
-        <Button title="削除" variant="outlined" :onclick="handleDelete" />
+        <Button title="削除" variant="outlined" :onClick="handleDelete" />
 
         <Button
           title="保存"
           variant="filled"
           :disabled="content.length === 0"
-          :onclick="handleSave"
+          :onClick="handleSave"
         />
       </div>
     </div>

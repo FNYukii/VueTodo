@@ -37,7 +37,7 @@ const handleCreate = () => {
         title="作成"
         variant="filled"
         :disabled="content.length === 0"
-        :onclick="handleCreate"
+        :onClick="handleCreate"
       />
     </div>
   </main>
