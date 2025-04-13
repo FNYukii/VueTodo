@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { generateSampleTodoContent } from '../utils/form'
 import { useRoute, useRouter } from 'vue-router'
 import { deleteTodo, readTodo, updateTodo } from '../utils/storage'
+import Link from '../parts/Link.vue'
 
 document.title = 'Todoの編集 - Vue Todo'
 
@@ -40,7 +41,7 @@ const handleSave = () => {
     />
 
     <div class="mt-8 flex justify-between gap-8 items-start">
-      <RouterLink to="/" class="outlined-button"> 戻る </RouterLink>
+      <Link to="/" title="戻る" />
 
       <div class="flex gap-8 flex-wrap justify-end">
         <button @click="handleDelete" class="outlined-button">削除</button>
