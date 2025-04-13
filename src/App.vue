@@ -4,7 +4,7 @@ import TopScreen from './screens/TopScreen.vue'
 </script>
 
 <template>
-  <div class="container max-w-[1024px] mx-auto px-4 sm:px-0">
+  <div class="container max-w-[1024px] mx-auto px-4">
     <Header />
     <RouterView />
   </div>
