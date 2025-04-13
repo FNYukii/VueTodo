@@ -1,11 +1,11 @@
 <script setup>
-document.title = 'Not Found - Vue Todo'
+document.title = 'Not found - Vue Todo'
 </script>
 
 <template>
   <main>
     <div class="mt-8">
-      <h1 class="text-2xl font-bold">Page not Found</h1>
+      <h1 class="text-2xl font-bold">Page not found</h1>
     </div>
 
     <p class="mt-8 text-secondary">ページが見つかりませんでした</p>
