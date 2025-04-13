@@ -23,7 +23,7 @@ const todos = readTodos()
       >
         <RouterLink
           v-for="todo in todos"
-          v-bind:to="'/todos/' + todo.id"
+          :to="'/todos/' + todo.id"
           class="p-4 border border-iron transition outline-none hover:bg-iron-pale focus:bg-iron-pale active:bg-iron-pale"
         >
           <p class="whitespace-pre">{{ todo.content }}</p>

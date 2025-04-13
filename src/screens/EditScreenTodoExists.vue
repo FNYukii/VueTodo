@@ -33,7 +33,7 @@ const handleSave = () => {
 
     <textarea
       v-model="content"
-      v-bind:placeholder="generateSampleTodoContent()"
+      :placeholder="generateSampleTodoContent()"
       class="mt-8 outlined-textarea"
     />
 
