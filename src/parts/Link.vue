@@ -6,5 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <RouterLink v-bind:to="to" class="outlined-button">{{ title }}</RouterLink>
+  <RouterLink v-bind:to="to" class="outlined-button -my-2">{{
+    title
+  }}</RouterLink>
 </template>
