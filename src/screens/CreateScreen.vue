@@ -4,6 +4,7 @@ import { generateSampleTodoContent } from '../utils/form'
 import { useRouter } from 'vue-router'
 import { createTodo } from '../utils/storage'
 import Link from '../parts/Link.vue'
+import Button from '../parts/Button.vue'
 
 document.title = 'Todoの作成 - Vue Todo'
 
@@ -32,13 +33,12 @@ const handleCreate = () => {
     <div class="mt-8 flex justify-between">
       <Link to="/" title="戻る" />
 
-      <button
-        @click="handleCreate"
-        v-bind:disabled="content.length === 0"
-        class="filled-button"
-      >
-        作成
-      </button>
+      <Button
+        title="作成"
+        variant="filled"
+        :disabled="content.length === 0"
+        :onclick="handleCreate"
+      />
     </div>
   </main>
 </template>

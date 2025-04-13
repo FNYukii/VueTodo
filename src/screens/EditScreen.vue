@@ -4,6 +4,7 @@ import { generateSampleTodoContent } from '../utils/form'
 import { useRoute, useRouter } from 'vue-router'
 import { deleteTodo, readTodo, updateTodo } from '../utils/storage'
 import Link from '../parts/Link.vue'
+import Button from '../parts/Button.vue'
 
 document.title = 'Todoの編集 - Vue Todo'
 
@@ -44,15 +45,14 @@ const handleSave = () => {
       <Link to="/" title="戻る" />
 
       <div class="flex gap-8 flex-wrap justify-end">
-        <button @click="handleDelete" class="outlined-button">削除</button>
+        <Button title="削除" variant="outlined" :onclick="handleDelete" />
 
-        <button
-          @click="handleSave"
-          v-bind:disabled="content.length === 0"
-          class="filled-button"
-        >
-          保存
-        </button>
+        <Button
+          title="保存"
+          variant="filled"
+          :disabled="content.length === 0"
+          :onclick="handleSave"
+        />
       </div>
     </div>
   </main>
