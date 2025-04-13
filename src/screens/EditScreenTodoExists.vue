@@ -4,7 +4,6 @@ import { ref } from 'vue'
 import { deleteTodo, updateTodo } from '../utils/storage'
 import { useRouter } from 'vue-router'
 import { generateSampleTodoContent } from '../utils/form'
-import Button from '../parts/Button.vue'
 
 const props = defineProps<{
   todo: Todo
@@ -42,14 +41,15 @@ const handleSave = () => {
       <RouterLink to="/" class="outlined-button">戻る</RouterLink>
 
       <div class="flex gap-8 flex-wrap justify-end">
-        <Button title="削除" variant="outlined" :onClick="handleDelete" />
+        <button @click="handleDelete" class="outlined-button">削除</button>
 
-        <Button
-          title="保存"
-          variant="filled"
+        <button
           :disabled="content.length === 0"
-          :onClick="handleSave"
-        />
+          @click="handleSave"
+          class="filled-button"
+        >
+          保存
+        </button>
       </div>
     </div>
   </main>
