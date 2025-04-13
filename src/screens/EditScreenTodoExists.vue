@@ -4,7 +4,6 @@ import { ref } from 'vue'
 import { deleteTodo, updateTodo } from '../utils/storage'
 import { useRouter } from 'vue-router'
 import { generateSampleTodoContent } from '../utils/form'
-import Link from '../parts/Link.vue'
 import Button from '../parts/Button.vue'
 
 const props = defineProps<{
@@ -40,7 +39,7 @@ const handleSave = () => {
     />
 
     <div class="mt-8 flex justify-between gap-8 items-start">
-      <Link to="/" title="戻る" />
+      <RouterLink to="/" class="outlined-button">戻る</RouterLink>
 
       <div class="flex gap-8 flex-wrap justify-end">
         <Button title="削除" variant="outlined" :onClick="handleDelete" />

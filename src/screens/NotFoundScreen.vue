@@ -1,6 +1,4 @@
 <script setup>
-import Link from '../parts/Link.vue'
-
 document.title = 'Not found - Vue Todo'
 </script>
 
@@ -13,7 +11,7 @@ document.title = 'Not found - Vue Todo'
     <p class="mt-8 text-secondary">ページが見つかりませんでした</p>
 
     <div class="mt-8 flex justify-between">
-      <Link to="/" title="戻る" />
+      <RouterLink to="/" class="outlined-button">戻る</RouterLink>
     </div>
   </main>
 </template>

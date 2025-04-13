@@ -1,7 +1,3 @@
-<script setup>
-import Link from '../parts/Link.vue'
-</script>
-
 <template>
   <main>
     <div class="mt-8">
@@ -11,7 +7,7 @@ import Link from '../parts/Link.vue'
     <p class="mt-8 text-secondary">Todoが見つかりませんでした</p>
 
     <div class="mt-8 flex justify-between">
-      <Link to="/" title="戻る" />
+      <RouterLink to="/" class="outlined-button">戻る</RouterLink>
     </div>
   </main>
 </template>

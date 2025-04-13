@@ -1,6 +1,5 @@
 <script setup>
 import { readTodos } from '../utils/storage'
-import Link from '../parts/Link.vue'
 
 document.title = 'Vue Todo'
 
@@ -12,7 +11,7 @@ const todos = readTodos()
     <div class="mt-8 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Todos</h1>
 
-      <Link to="/new" title="新規Todo" />
+      <RouterLink to="/new" class="outlined-button -my-2">新規Todo</RouterLink>
     </div>
 
     <div class="mt-8">
