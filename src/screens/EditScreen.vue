@@ -8,10 +8,10 @@ import Button from '../parts/Button.vue'
 
 document.title = 'Todoの編集 - Vue Todo'
 
-const content = ref('')
-
 const route = useRoute()
 const router = useRouter()
+
+const content = ref('')
 
 const id = route.params.id as string
 const todo = readTodo(id)
