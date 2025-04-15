@@ -15,7 +15,9 @@ const todos = readTodos()
     </div>
 
     <div class="mt-8">
-      <p v-if="todos.length === 0" class="text-secondary">Todoがありません</p>
+      <p v-if="todos.length === 0" class="text-secondary">
+        まだTodoがありません
+      </p>
 
       <div
         v-if="todos.length !== 0"
